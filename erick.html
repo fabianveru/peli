@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea🧡</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("/segundo_wallpaper_individual_de_intensamente__by_dwowforce_d8xvdck-fullview.jpg");
+            /* Imagen de fondo por defecto */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para el sobre */
+        .envelope {
+            background-image: url("/98b297c44dda7f554cc7d16b90f38579.jpg");
+            /* Imagen de fondo por defecto para el sobre */
+            background-size: cover;
+            background-position: center;
+            width: 280px;
+            height: 580px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fondo semitransparente para el sobre */
+            border: 9px solid #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .paper {
+            background-color: rgba(39, 39, 39, 0.5);
+            /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: 250px;
+            display: block;
+            margin: 20px auto;
+            border: 8px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para el botón */
+        button {
+            background-color: #1b1a1a;
+            color: rgb(231, 154, 255);
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #ce7aff;
+        }
+
+        /* Animación de emoticones */
+        .emoji {
+            font-size: 2rem;
+            position: fixed;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-200px);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Estilos para los modales */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #000000;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .modal-header {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .close {
+            color: #b693ee;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #specialText {
+            font-size: 24px;
+           
+            /* Color del texto */
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+            /* Sombras para simular el borde */
+        }
+
+
+        .envelope .paper :not(img) {
+            color: rgb(255, 255, 255);
+            /* Cambia el color aquí según tu preferencia */
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="envelope">
+        <div class="paper">
+            <h1>Mamor🧡</h1>
+            <p>𝐐𝐮𝐢𝐞𝐫𝐨 𝐢𝐧𝐯𝐢𝐭𝐚𝐫𝐭𝐞 𝐚 𝐭𝐞𝐧𝐞𝐫 𝐮𝐧 𝐝𝐢𝐚 𝐞𝐬𝐩𝐞𝐜𝐢𝐚𝐥 𝐜𝐨𝐧𝐦𝐢𝐠𝐨! 𝐕𝐢𝐞𝐧𝐝𝐨
+                <strong id="specialText">𝙄𝙣𝙩𝙚𝙣𝙨𝙖𝙢𝙚𝙣𝙩𝙚𝟐</strong> 𝐂𝐨𝐦𝐩𝐚𝐫𝐭𝐚𝐦𝐨𝐬 𝐞𝐬𝐭𝐞
+                𝐦𝐨𝐦𝐞𝐧𝐭𝐨 𝐣𝐮𝐧𝐭𝐨𝐬
+            </p>
+            <p>¿𝐐𝐮é 𝐝𝐢𝐜𝐞𝐬? ¿𝐓𝐞 𝐚𝐩𝐮𝐧𝐭𝐚𝐬?</p>
+            <button id="acceptButton">PRESIONA</button>
+            <img src="erick.jpg" alt="Intensamente 2">
+        </div>
+    </div>
+
+    <script>
+
+        
+        // Obtener el texto especial
+        var specialText = document.getElementById("specialText").innerText;
+
+        // Dividir el texto especial en caracteres individuales
+        var specialTextLetters = specialText.split('');
+
+        // Vaciar el contenido del elemento specialText
+        document.getElementById("specialText").innerHTML = '';
+
+        // Colores específicos
+        var colors = ['red', 'red', 'lightgreen', 'lightgreen', 'yellow', 'yellow', 'lightblue', 'lightblue', 'lavender', 'lavender'];
+        var colorIndex = 0;
+
+        // Para cada letra, crear un <span> y agregarlo al elemento specialText
+        specialTextLetters.forEach(function (letter) {
+            var span = document.createElement('span');
+            span.textContent = letter;
+            span.style.color = colors[colorIndex];
+            document.getElementById("specialText").appendChild(span);
+            colorIndex = (colorIndex + 1) % colors.length;
+        });
+    </script>
+
+
+
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #b90000;">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
+            <span class="close">&times;</span>
+            <p>"𝙌𝙪𝙞𝙚𝙧𝙤 𝙘𝙤𝙢𝙥𝙖𝙧𝙩𝙞𝙧 𝙡𝙤 𝙚𝙨𝙥𝙚𝙘𝙞𝙖𝙡 𝙦𝙪𝙚 𝙩𝙚 𝙝𝙖𝙨 𝙫𝙪𝙚𝙡𝙩𝙤
+                𝙥𝙖𝙧𝙖 𝙢í 𝙚𝙣 𝙚𝙨𝙩𝙚 𝙩𝙞𝙚𝙢𝙥𝙤 𝙦𝙪𝙚 𝙝𝙚𝙢𝙤𝙨 𝙥𝙖𝙨𝙖𝙙𝙤 𝙟𝙪𝙣𝙩𝙤𝙨."</p>
+            <img
+                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnVyYnM1NWV3aDJwbXU2bW1rYmNzZ3NwdnZubXc5czF4NDBlMWZ1ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IStvQ1VdxLaWk/giphy.webp">
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #ffffac;">💛💛💛💛💛💛💛💛💛💛💛💛💛💛</div>
+            <span class="close">&times;</span>
+            <p>"𝙈𝙚 𝙚𝙣𝙘𝙖𝙣𝙩𝙖𝙧í𝙖 𝙘𝙤𝙣𝙚𝙘𝙩𝙖𝙧 𝙖ú𝙣 𝙢á𝙨 𝙮 𝙚𝙭𝙥𝙡𝙤𝙧𝙖𝙧 𝙩𝙤𝙙𝙤 𝙡𝙤 𝙦𝙪𝙚 𝙚𝙡
+                𝙛𝙪𝙩𝙪𝙧𝙤 𝙩𝙞𝙚𝙣𝙚 𝙧𝙚𝙨𝙚𝙧𝙫𝙖𝙙𝙤 𝙥𝙖𝙧𝙖 𝙣𝙤𝙨𝙤𝙩𝙧𝙤𝙨."</p>
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzlhcmU2OTNsbWhyaWM2M3hzYTN0am94dzBpbTBvM2RqdTM4MHZwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ta2eHM043vhVS/giphy.webp"
+                alt="Diversión" style="width: 100%;">
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #9aeb86;">💚💚💚💚💚💚💚💚💚💚💚💚💚💚</div>
+            <span class="close">&times;</span>
+            <p>"𝘾𝙖𝙙𝙖 𝙢𝙤𝙢𝙚𝙣𝙩𝙤 𝙖 𝙩𝙪 𝙡𝙖𝙙𝙤 𝙚𝙨 𝙫𝙖𝙡𝙞𝙤𝙨𝙤 𝙮 𝙦𝙪𝙞𝙚𝙧𝙤 𝙨𝙪𝙢𝙖𝙧 𝙖ú𝙣 𝙢á𝙨
+                𝙚𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖𝙨 𝙥𝙖𝙧𝙖 𝙧𝙚𝙘𝙤𝙧𝙙𝙖𝙧."</p>
+            <img
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWg2anl6cWRmbXQ1aW0xYWZ5c3J6ZTl1Y21tZmthc2QwNTFoMmp6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f1WG6oDSiMHE4/giphy.webp">
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #6fb5f7;">💙💙💙💙💙💙💙💙💙💙💙💙💙💙</div>
+            <span class="close">&times;</span>
+            <p>𝙔 𝙦𝙪é 𝙢𝙚𝙟𝙤𝙧 𝙦𝙪𝙚 𝙝𝙖𝙘𝙚𝙧𝙡𝙤 𝙘𝙤𝙣𝙩𝙞𝙜𝙤!</p>
+            <img
+                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3dxMnprc2NjeDE1bjZpZXUwYmdrYzBoMXAyNW1iNDhobWtudGRmNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BEvVsk0v0JM6k/giphy.webp">
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #c685eb;">💜💜💜💜💜💜💜💜💜💜💜💜💜💜</div>
+            <span class="close">&times;</span>
+            <p>𝙏𝙚 𝙦𝙪𝙞𝙚𝙧𝙤 𝙢𝙪𝙘𝙝𝙤𝙤𝙤𝙤𝙤𝙤𝙤✨</p>
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2d0amxnajhzbmc3Zm50ZTlmeG9leXkzYmR2Zno0aHdldWhqNTFtbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ExSo2z3TdCi76/giphy.webp"
+                alt="Increíble" style="width: 100%;">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('acceptButton').addEventListener('click', function () {
+            const emojis = ['💛', '💚', '❤️', '💜', '💙'];
+            const modals = ['modal1', 'modal2', 'modal3', 'modal4', 'modal5'];
+
+            for (let i = 0; i < 10; i++) {
+                let emoji = document.createElement('div');
+                emoji.className = 'emoji';
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.animationDelay = Math.random() * 2 + 's';
+                emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                document.body.appendChild(emoji);
+
+                setTimeout(() => {
+                    document.body.removeChild(emoji);
+                }, 3000);
+            }
+
+            let currentIndex = 0;
+            const showModal = () => {
+                if (currentIndex < modals.length) {
+                    let modal = document.getElementById(modals[currentIndex]);
+                    modal.style.display = "block";
+
+                    setTimeout(() => {
+                        modal.style.display = "none";
+                        currentIndex++;
+                        showModal();
+                    }, 4000);
+                }
+            };
+
+            showModal();
+        });
+
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function () {
+                this.parentElement.parentElement.style.display = 'none';
+            });
+        });
+
+        window.onclick = function (event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+
+ function showFinalMessage() {
+            document.querySelector('.paper').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
